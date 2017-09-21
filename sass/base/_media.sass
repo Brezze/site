@@ -1,0 +1,215 @@
+@import "bourbon"
+@import "utils/vars"
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.sibwest-group
+		padding-left: 25px
+		padding-right: 25px
+		&-item
+			&-links__item
+				margin-bottom: 10px
+			&__phone
+				margin-bottom: 20px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.container
+		padding-left: 30px !important
+		padding-right: 30px !important
+
+	.page-header
+		&__top
+			padding: 20px 0
+			background-color: #fff
+			border-bottom: none
+
+	.margin-auto
+		margin-left: auto
+
+	.hamburger
+		display: block
+		margin-left: 32px
+		padding: 0
+		&-box
+			margin-top: 10px
+
+	.main-nav
+		display: none
+		position: absolute
+		width: 100%
+		top: 80px
+		left: 0
+		z-index: 100
+		background-color: $blue-color
+		padding: 70px 0 100px
+
+	.main-list
+		flex-direction: column
+		li 
+			padding: 10px 0
+		a 
+			padding: 0
+			line-height: 1.6
+			font-size: 30px
+			padding-left: 52px
+		.active
+			&::before
+				left: 0
+				width: 4px
+				height: 100%
+
+	.search-form
+		bottom: -155px
+		width: 100%
+		&-wrap
+			margin-bottom: 28px
+			width: 50%
+		&-input
+			box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.07)
+			width: 100%
+			min-width: auto
+		&-btn
+			display: block
+			margin: 0 auto
+
+	.s-sibwest-group
+		padding-top: 140px	
+	
+	.slider-dots
+		position: absolute
+		bottom: 25px
+		left: 50%
+		margin-left: -25px
+
+	.sibwest-group
+		padding: 40px 0 0
+		background: none
+		margin-top: 20px
+		&__heading
+			margin-bottom: 60px
+			h2
+				line-height: 1.2
+				font-size: 50px
+			&-descr
+				display: none
+		&__img-wrap
+			font-size: 0
+		&-logo
+			display: none
+		&-wrap
+			position: relative
+			&--border
+				margin-bottom: 10px
+			&--xs
+				margin-bottom: 0
+
+	.s-review
+		&-block
+			background: none	
+
+	.socials
+		text-align: center
+		&__link
+			margin-bottom: 30px
+	.rating
+		text-align: center				
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+	/**/
+
+	body
+		font-size: 16px
+
+	.h1
+		font-size: 45px
+		margin-top: 25px
+	
+	.h2
+		font-size: 30px 
+
+	.btn--gradient
+		font-size: 15px
+
+	.s-map
+		&-modal
+			padding-left: 20px
+			padding-right: 20px
+			position: relative
+			top: 157px
+			margin-top: -110px
+			&__heading
+				font-size: 15px
+			&__adress, &__phone
+				font-size: 15px
+
+	.s-review
+		&--top
+			text-align: center
+			margin-bottom: 50px
+		.rating-review
+			margin-bottom: 15px
+			display: inline-block
+		&__line
+			display: none
+		&-item
+			&__name
+				margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 420px)
+	/**/
+	.h1
+		font-size: 40px
+
+	.search-form
+		&-wrap
+			.icon
+				left: 10px	
+		&-input
+			padding: 16px 30px 16px 30px
+		&-btn
+			font-size: 15px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

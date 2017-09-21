@@ -1,0 +1,250 @@
+@import "utils/vars"
+
+// ==================SIBWEST PAGE STYLES==================
+
+.s-sibwest-group
+	background-color: #F9F9F9
+	padding-top: 90px
+
+.sibwest-group
+	margin-top: 190px
+	position: relative
+	background-color: #FFF
+	padding: 40px 50px 35px
+	&-logo
+		width: 294px
+		height: 294px
+		position: absolute
+		top: -124px
+		left: 50%
+		margin-left: -147px
+	&-wrap
+		margin-bottom: 52px
+		&--border
+			border-bottom: 1px solid #F2F2F2
+			padding-bottom: 45px
+	&-item
+		position: relative
+		&--fade
+			&::after
+				content: ''
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0
+				top: 0
+				background-image: linear-gradient(transparent, white 85%)
+				pointer-events: none
+		&__text
+			font-size: 17px
+			color: $black-color
+			font-family: $display-font
+			&:first-child
+				margin-top: 0
+		&__heading
+			font-size: 15px
+			font-family: $bebas-r
+			color: rgba(0,0,0,.3)
+			text-transform: uppercase
+			display: block
+		&__phone
+			font-size: 33px
+			color: $black-color
+			font-family: $bebas-r
+			@include ls
+			margin-bottom: 40px
+			display: block
+			line-height: 1.4
+		&-links
+			&__item
+				font-family: $bebas-r
+				color: $purple-color
+				@include ls
+				text-transform: uppercase
+				font-size: 15px
+				display: inline-block
+				margin-right: 25px
+				&::after
+					background-color: $purple-color
+				&:hover
+					color: $purple-color
+
+	&__heading
+		margin-bottom: 120px
+		h2
+			font-size: 70px
+			font-weight: 900
+			color: $black-color
+			text-align: center
+			margin-bottom: 0
+			line-height: 1.3
+		&-descr
+			font-size: 15px
+			color:  rgba(0, 0, 0, 0.71)
+			font-family: $bebas-r
+			text-align: center
+			@include ls
+
+.s-map
+	background-image: linear-gradient(to bottom, #d4d4d4, #f9f9f9)
+	padding-bottom: 140px
+	position: relative
+	&--bg
+		background-image: url(../img/sibwest-map.jpg)
+		background-size: cover
+	&-marker
+		width: 280px
+		height: 280px
+		border-radius: 50%
+		background: linear-gradient(90deg, rgba(41,92,212,.1), rgba(109,45,230,.1))
+		position: relative
+		margin: auto
+		margin-top: 170px
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			margin: auto
+			width: 90%
+			height: 90%
+			display: block
+			background: linear-gradient(90deg, rgba(41,92,212,.3), rgba(109,45,230,.3))
+			border-radius: 50%
+		span 
+			display: block
+			width: 26px
+			height: 26px
+			border-radius: 100% 100% 0 100%
+			transform: rotate(45deg)
+			@include gradient
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			margin: auto
+
+	&-modal
+		padding: 64px 70px 50px
+		background-color: #FFF
+		text-align: center
+		max-width: 540px
+		margin: 50px auto 55px
+		&__heading
+			font-family: $bebas-b
+			font-size: 19px
+			color: rgba(0,0,0,.3)
+			text-transform: uppercase
+			margin-bottom: 0
+		&__adress, &__phone
+			font-size: 19px
+			font-family: $bebas-b
+			color: $black-color
+			margin: 0
+		&__phone
+			margin-bottom: 50px
+			margin-top: 15px
+
+.s-deals
+	overflow: hidden
+	white-space: nowrap
+	background-color: #F8F8F8
+
+.deals-item
+	min-height: 220px
+	min-width: 386px
+	position: relative
+	margin-top: 25px
+	display: inline-block
+	+ .deals-item
+		margin-left: 18px
+	img
+		display: block
+	&-content
+		position: absolute
+		bottom: 20px
+		left: 20px
+	&__heading
+		font-size: 25px
+		color: $white-color
+		font-family: $display-font
+	&__old-price, &__new-price
+		font-size: 16px
+		font-family: $bebas-b
+		color: $white-color
+	&__old-price
+		color: rgba(255,255,255,.3)
+		text-decoration: line-through
+		margin-right: 10px
+
+.s-review
+	background: linear-gradient(180deg, #f9f9f9 0%, #d4d4d4 100%)
+	padding: 70px 0 120px
+	&__line
+		height: 2px
+		background-color: #F2F2F2
+	&-block
+		background-color: #FFF
+		margin-bottom: 100px
+	&--top
+		margin-bottom: 100px
+	&__load
+		background-color: $black-color
+		display: block
+		text-align: center
+		font-size: 18px
+		font-family: $bebas-b
+		text-transform: uppercase
+		color: #fff
+		padding: 13px 0
+	&-item
+		padding-bottom: 80px
+		&__img-wrap
+			text-align: center
+			img
+				width: 87px
+				height: 87px
+				border-radius: 50%
+		&__name
+			color: $purple-color
+			font-family: $bebas-r
+			font-size: 15px
+			text-transform: uppercase
+			text-align: center
+		&__text
+			font-family: $display-font
+			color: $black-color
+			margin-bottom: 24px
+		&__date
+			font-size: 16px
+			color: rgba(0,0,0,.6)
+			font-family: $bebas-b
+			text-transform: uppercase
+			margin-right: 20px
+		&-like
+			margin-top: 25px
+		&__like, &__dislike
+			font-size: 14px
+			font-weight: 600
+			cursor: pointer
+			.icon
+				margin-right: 8px
+		&__like
+			margin-right: 30px
+		&__dislike
+			color: $red-color
+			.icon
+				color: $red-color
+
+@keyframes jump
+	0%
+		transform: translateY(0) rotate(45deg)
+
+	100%
+		transform: translateY(-20px) rotate(45deg)
+
+.bounce
+	animation: jump 1.5s infinite ease

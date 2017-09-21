@@ -1,0 +1,48 @@
+@import "utils/vars"
+
+// ==================FOOTER STYLES==================
+
+.page-footer
+	&-list
+		margin-bottom: 50px
+		padding-top: 35px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			height: 3px
+			width: 156px
+			background-color: rgba(0,0,0,.5)
+			position: absolute
+			top: 0
+			left: 0
+		a 
+			color: rgba(0,0,0,.3)
+			font-weight: 600
+			font-size: 18px
+			display: inline-block
+			@include trans()
+			&::after
+				content: ''
+				display: block
+				width: 0%
+				height: 2px
+				background-color: #000
+				@include trans()
+			&:hover
+				color: #000
+				transform: translateX(10px)
+				&::after
+					width: 100%
+
+	&__copyright
+		@include gradient()
+		width: 100%
+		text-align: center
+		padding: 20px 0
+		p 
+			font-size: 13px
+			font-weight: 400
+			color: $white-color
+	&-indent
+		margin: 90px 30px
